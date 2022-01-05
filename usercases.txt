@@ -1,0 +1,14 @@
+As a customer,
+I want to use my mobile,
+to browse the webpage.
+[CSS för mobilanpassning]
+
+As a customer,
+I want to buy insurance,
+so I will be "protected" from accidents.
+[Kunna köpa försäkring via hemsidan, (Join now knapp)]
+
+As a customer,
+I want to contact the company,
+So I can get insurance.
+[Kontakt formulär, adress och telefonnummer, kanske karta också]
