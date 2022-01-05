@@ -1,0 +1,53 @@
+/*
+FÄRGER:
+#F17949
+#FAB131
+#C7DDEA
+#A9A19E
+
+
+FONT:
+Headings (Frank Ruhl Libre)
+Paragraphs (Fira Sans)
+*/
+
+/* css reset */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* importera fonter */
+@font-face {
+  font-family: Frank-Ruhl-Libre;
+  src: url("fonts/FrankRuhlLibre-Regular.ttf");
+}
+@font-face {
+  font-family: Fira-Sans;
+  src: url("fonts/FiraSans-Regular.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Frank-Ruhl-Libre;
+}
+
+p {
+  font-family: Fira-Sans;
+}
