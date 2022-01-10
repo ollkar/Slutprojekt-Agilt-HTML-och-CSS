@@ -105,10 +105,8 @@ footer section .UpHome .arrow-up {
   transform-origin: center center;
   border-top: 2px solid black;
   border-left: 2px solid black;
-  margin-left: -3px;
-  margin-right: -3px;
-  margin-bottom: -3px;
 }
+
 footer section .UpHome a{
     font-size: 1.4em;
     color: black;
