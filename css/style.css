@@ -221,28 +221,28 @@ nav a:hover {
 @media only screen and (min-width: 1200px) {
   /* header big-article */
   #big-article {
-    align-items: center;
+    align-items: flex-start;
   }
   #big-article h1 {
     padding-top: 150px;
     font-size: 85px;
     width: 60%;
     line-height: 80px;
+    margin-left: 200px;
   }
   #big-article p {
     width: 60%;
     font-size: 30px;
     line-height: 50px;
     z-index: 2;
+    margin-left: 200px;
   }
   #big-article button {
     font-size: 14px;
     padding: 20px;
     border-radius: 50px;
     width: 14rem;
-    position: absolute;
-    top: 38rem;
-    left: 12rem;
+    margin-left: 200px;
   }
   #big-article img {
     width: 65%;
