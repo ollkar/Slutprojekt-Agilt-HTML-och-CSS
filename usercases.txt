@@ -12,3 +12,13 @@ As a customer,
 I want to contact the company,
 So I can get insurance.
 [Kontakt formulär, adress och telefonnummer, kanske karta också]
+
+
+
+Som en användare,
+Vill jag ha en responsiv hemsida,
+Så jag kan använda den på flera olika enheter
+
+Som en användare,
+Vill jag ha en kontakt formulär,
+Så jag kan få svar på mina frågor
