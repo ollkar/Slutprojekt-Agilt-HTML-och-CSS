@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Frank+Ruhl+Libre:wght@900&display=swap');
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*, h1 {
+        font-family: 'Frank Ruhl Libre', serif;
+    }
+*, p {
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+.main {
+    display: grid;
+    margin:10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "part1 part1 part1 part1 part1 part1 part1"
+    "part1 part1 part1 part1 part1 part1 part1"
+    "part2 part2 part2 part2 part2 part2 part2"
+    "part2 part2 part2 part2 part2 part2 part2"
+    "part3 part3 part3 part3 part3 part3 part3";
+    
+ }
+.main .part1 {
+    background-color:#A9A19E;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    justify-content: space-between;
+    height:90vh;
+    position: relative;
+    z-index: 1;
+    grid-area: part1;
+    
+}
+
+.main .part1 .part1-inner1 .button {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 13px;
+    display:inline-block;
+    margin-top: 50px;
+    font-size: 70%;
+    position: fixed;
+}
+
+.main .part1-inner1{
+    margin: 10px 10px 10px 70px;
+  
+    text-align: left;
+    padding: 50px;
+    max-width: 50%;
+    height: 50%;
+}
+
+.main .part1-inner2 {
+    margin: 10px 10px 10px 70px;
+    
+    text-align: left;
+    max-width: 50%;
+    height: 50%;
+    text-align: left;
+    line-height: 1.6;
+    padding: 50px 30px 30px 30px;
+    font-size: 90%;
+   
+}
+
+
+
+.main .part2 {
+    background-color: #FAB131 ;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end; justify-content: center;
+    height:100vh;
+    grid-area: part2;
+    position: relative;
+   z-index: 1;
+   
+}
+
+.main .part2-inner {
+    max-width: 500px;
+   
+}
+
+
+
+.main .part3 {
+    grid-area: part3;
+  
+    display: flex;
+    background-color:rgba(0,0,0,0.0);
+    justify-content: center;
+    margin:50px 10px 10px 10px;
+    width: 90%;
+    height: 50%;
+    z-index: 10;
+    grid-row-start: 2;
+    
+    
+    justify-self: center;
+    
+}
+
+.main .part3 .children {
+
+    background-color: white;
+    width:33%;
+    height: 110%;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.6;
+    padding:10px;
+    overflow: hidden;
+    
+}
+
+.child2-image {
+    position: static;
+    max-width: 100%;
+    border-radius: 15px;
+    flex: none;
+
+}
+.main .part3 .right {
+   
+    background-color: white;
+    width:33%;
+    height: 110%;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.6;
+    padding:10px;
+    overflow: hidden;
+  
+}
+.right2-image {
+    position: static;
+    max-width: 100%;
+    border-radius: 15px;
+    flex: none;
+}
+
+.main .part3 .old {
+    background-color: white;
+    width:33%;
+    height: 110%;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.6;
+    padding:10px;
+    overflow: hidden;
+}
+.old2-image {
+    
+    position: static;
+    max-width: 100%;
+    border-radius: 15px;
+    flex: none;
+}
+
+.main .part3 p {
+    position: relative;
+    font-weight: 100;
+}
+
+.main .part1-inner1, .main .part2 h1 {
+   color: white;
+}
+
+.main .part2 h1, .main .part2 p{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+      grid-template-columns: 1fr;
+      
+      grid-template-areas: 
+      "part1"
+      "part3"
+      "part2";
+      align-self: center;
+      justify-self: center;
+    
+    }
+    .main .part1 {
+        background-color:#A9A19E;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        
+        height:auto;
+        position: static;
+        
+        
+        
+    }
+    .main .part1-inner1{
+        margin: 10px;
+      
+        text-align: left;
+        padding: 50px 10px 10px 10px;
+        max-width: 100%;
+        height: 100%;
+        font-size: 200%;
+        line-height: 1;
+    }
+    
+    .main .part1-inner2 {
+        margin: 10px;
+        
+        text-align: left;
+        max-width: 100%;
+        height: 100%;
+        text-align: left;
+        line-height: 1.6;
+        padding: 10px;
+        font-size: 140%;
+       
+    }
+
+    .main .part3 {
+        display: flex;
+        flex-direction: column;
+        background-color: #A9A19E ;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        flex-wrap: nowrap;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .main .part3 .children, .main .part3 .right, .main .part3 .old {
+        background-color:white;
+        width: 70%;
+       
+        margin: 15px;
+        border-radius: 15px;
+        text-align: center;
+        line-height: 1.6;
+        padding:0px;
+        overflow: hidden;
+        
+    }
+    .child2-image, .right2-image, .old2-image {
+        position: static;
+        max-width: 90%;
+        border-radius: 15px;
+        flex: none;
+        padding-top: 5px;
+    }
+    .main .part1 .part1-inner1 .button{
+        display: none;
+    }
+    .main .part1{
+        grid-area: part1;
+    }
+    .main .part3 {
+        grid-area: part2;
+    }
+    .main .part2 {
+        grid-area: part3;
+    }
+    .main .part2 {
+        background-color: #FAB131 ;
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center; justify-content: center;
+        height:auto;
+        
+        position: relative;
+       
+       
+    }
+    
+    .main .part2-inner {
+        max-width: 100%;
+       padding: 10px;
+    }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+ {
+    .main .part1 {
+        
+        height:60vh;
+      
+    }
+    
+    .main .part1 .part1-inner1 .button {
+        
+        position: fixed;
+    }
+    
+    .main .part1-inner1{
+        margin: 10px 10px 10px 70px;
+      
+        text-align: left;
+        padding: 50px;
+        max-width: 100%;
+        height: 50%;
+    }
+    
+    .main .part1-inner2 {
+        margin: 10px;
+       
+        text-align: left;
+        max-width: 100%;
+        height: 50%;
+         }
+    .main .part2 {
+     
+        height:60vh;
+         }
+  
+    .main .part1 .part1-inner1 .button {
+        margin-top: 30px;
+        position: relative;
+    }
+
+  }
+  @media only screen 
+  and (min-device-width: 280px) 
+  and (max-device-width: 653px) {
+      .main {
+          max-width: auto;
+      }
+    .main .part1-inner1{
+        margin: 10px;
+      font-size:100%;
+       }
+    .main .part1-inner2 {
+        margin: 10px;
+       font-size:100%;
+      }
+  }
