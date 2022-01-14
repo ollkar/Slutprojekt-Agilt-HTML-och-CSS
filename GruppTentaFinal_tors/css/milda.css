@@ -17,7 +17,7 @@ p,a,button {
 /*Desktop vanlig*/
 .main {
     display: grid;
-    margin:10px;
+    margin:0px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "part1 part1 part1 part1 part1 part1 part1"
@@ -185,6 +185,17 @@ p,a,button {
 .main .part2 h1, .main .part2 p{
     text-align: center;
 }
+@media (-webkit-device-pixel-ratio: 1.25) {
+    :root {
+    zoom: 0.6;
+    }
+}
+/* @media (-webkit-device-pixel-ratio: 1.25), only screen and (min-width: 1200px){
+    .main .part2-inner{
+        
+        margin-top: 70px;
+    }
+} */
 /*Stor desktop*/
 @media only screen and (min-width: 1200px){
     .main .part1{
@@ -308,6 +319,10 @@ p,a,button {
         overflow: hidden;
         
     }
+   .child2-image, .right2-image, .old2-image {
+        
+        padding: 5px;
+    }
     /*.child2-image, .right2-image, .old2-image {*/
         /*position: static;*/
         /*max-width: 100%;
@@ -342,3 +357,10 @@ p,a,button {
        padding: 10px;
     }
 }
+ @media only screen and (max-width: 280px) 
+  
+  {
+    .main {
+         overflow: scroll;
+    }
+}  
